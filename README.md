@@ -1,6 +1,15 @@
 # kafka-throughput-test
 
-These are my results, run with: java -jar benchmarks.jar -wi 500 -i 1000 -f 1
+Compile with
+```
+mvn clean install
+```
+Then in /target run with:
+```
+java -jar benchmarks.jar -wi 500 -i 1000 -f 1
+```
+These are my results:
+
 ```
 # Run complete. Total time: 00:50:15
 
