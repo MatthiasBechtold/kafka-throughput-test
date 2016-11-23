@@ -22,8 +22,8 @@ KafkaBenchmark.testSerializer              thrpt  1000     240,659 ±    19,212 
 KafkaBenchmark.testSerializerNoFlush       thrpt  1000  524422,547 ± 33349,532  ops/s
 ```
 
-With flush, final classes over non-final: +5.55% throughput<br>
-Without flush, final classes over non-final: +3.35% throughput
+Without flush(), final classes over non-final: +5.55% throughput<br>
+With flush(), final classes over non-final: +3.35% throughput
 
 My system: Windows 8.1 Pro, i7 6800K @ 3,4GHz, 32GB RAM Quad Channel - JDK: x64 Oracle 1.8u102<br>
 Kafka Broker 2.11-0.10.1.0 running on the same machine on Arch Linux 4.8.10 in VirtualBox 5.10 JDK: OpenJDK 1.8u112<br>
