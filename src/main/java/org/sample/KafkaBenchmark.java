@@ -63,6 +63,16 @@ public class KafkaBenchmark {
 		finalProducer.flush();
 	}
 
+	@Benchmark
+	public void testSerializerNoFlush() {
+		producer.send(new ProducerRecord<byte[], byte[]>("perftest", data));
+	}
+
+	@Benchmark
+	public void testFinalSerializerNoFlush() {
+		finalProducer.send(new ProducerRecord<byte[], byte[]>("perftest", data));
+	}
+
 	@Override
 	protected void finalize() throws Throwable {
 		try {
