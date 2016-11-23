@@ -22,5 +22,5 @@ KafkaBenchmark.testSerializer              thrpt  1000     240,659 ±    19,212 
 KafkaBenchmark.testSerializerNoFlush       thrpt  1000  524422,547 ± 33349,532  ops/s
 ```
 
-With flush, final classes over non-final: +5,55% Throughput
+With flush, final classes over non-final: +5,55% Throughput<br>
 Without flush, final classes over non-final: +3,35% Throughput
